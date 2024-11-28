@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "product_name": "Wireless Earbuds",
+      "product_image": "https://i.postimg.cc/hvqVYZYW/product1.png",
+      "description": "High-quality wireless earbuds with noise cancellation.",
+      "price": 2999
+    },
+    {
+      "id": 2,
+      "product_name": "Smartphone Stand",
+      "product_image": "https://i.postimg.cc/WpMGZjD2/product2.jpg",
+      "description": "Adjustable smartphone stand for desk or table use.",
+      "price": 499
+    },
+    {
+      "id": 3,
+      "product_name": "Gaming Mouse",
+      "product_image": "https://i.postimg.cc/65cCH0Lg/product3.jpg",
+      "description": "Ergonomic gaming mouse with customizable RGB lighting.",
+      "price": 1999
+    },
+    {
+      "id": 4,
+      "product_name": "Laptop Backpack",
+      "product_image": "https://i.postimg.cc/x1dMBz6C/product4.jpg",
+      "description": "Water-resistant backpack with multiple compartments for laptops.",
+      "price": 1499
+    },
+    {
+      "id": 5,
+      "product_name": "Fitness Tracker",
+      "product_image": "https://i.postimg.cc/MprVwpLY/product5.jpg",
+      "description": "Track your steps, heart rate, and sleep patterns with ease.",
+      "price": 2499
+    },
+    {
+      "id": 6,
+      "product_name": "Bluetooth Speaker",
+      "product_image": "https://i.postimg.cc/FKdcHQ5X/product6.jpg",
+      "description": "Portable Bluetooth speaker with superior sound quality.",
+      "price": 1799
+    }
+  ]
+  
