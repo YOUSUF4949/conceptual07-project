@@ -10,6 +10,20 @@ function App() {
     status : 'cart'
   });
   const [addToCart, setAddToCart] = useState([])
+  const [productPrice, setProductsPrice] = useState(0)
+  
+  // here will be increase price
+  const handleIncreasePrice = (price)=>{
+    const sum = productPrice + price;
+    setProductsPrice(sum)
+  }
+
+  // here will be decrease price
+  const handleDecreasePrice = (id)=>{
+    const prodPrice = addToCart.find(prodId => prodId.id == id);
+    setProductsPrice(productPrice - prodPrice.price)
+
+  }
 
   // here worked toggle button;
   const handleAddToCart = (cart)=>{
@@ -17,6 +31,7 @@ function App() {
     if(isExist){
       alert('You Already Exist it')
     }else{
+      handleIncreasePrice(cart.price)
       const newAddCart = [...addToCart, cart];
       setAddToCart(newAddCart)
     }
@@ -24,6 +39,7 @@ function App() {
 
   // here worked cart delete fermet
   const handleDeleteButton = (id)=> {
+    handleDecreasePrice(id)
     const deleteAddToCartItem = addToCart.filter(p => p.id != id)
     setAddToCart(deleteAddToCartItem)
   }
@@ -49,7 +65,7 @@ function App() {
     <div className=" w-10/12 mx-auto">
      {/* header section here */}
      <div>
-      <Header addToCart={addToCart}></Header>
+      <Header addToCart={addToCart} productPrice={productPrice} ></Header>
      </div>
      {/* main section starts here */}
      <div className="grid grid-cols-2">

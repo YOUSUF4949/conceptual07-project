@@ -1,5 +1,6 @@
 
-const Header = ({addToCart})=>{
+const Header = ({addToCart, productPrice})=>{
+
     return (
         <div className="bg-slate-300 p-3 flex items-center justify-between">
             <h2 className="text-2xl font-bold">Navber Section</h2>
@@ -9,7 +10,7 @@ const Header = ({addToCart})=>{
                     <li>Home</li>
                     <li>Product</li>
                     <li>Cart {addToCart.length}</li>
-                    <li>$79.99</li>
+                    <li>$ {productPrice}</li>
                 </ul>
             </div>
         </div>

@@ -17,7 +17,7 @@ export default function Products({product, handleAddToCart}){
           <p className="text-gl">{description}</p>
           <p>$ {price}</p>
           <div className="">
-            <button onClick={()=> handleAddToCart(product)} className="border-2 border-slate-300 rounded-lg cursor-pointer w-2/5 mx-auto py-3">Add To Cart</button>
+            <button onClick={()=> handleAddToCart(product, price)} className="border-2 border-slate-300 rounded-lg cursor-pointer w-2/5 mx-auto py-3">Add To Cart</button>
           </div>
         </div>
       </div>
